@@ -6,4 +6,17 @@
     margin-top: 210px;
     display: flex;
     flex-direction: row;
+    
+}
+
+.home{
+    padding-right: 60px;
+}
+
+
+.home2{
+    width: 70px;
+    
+    position: relative;
+    top:21px ;
 }

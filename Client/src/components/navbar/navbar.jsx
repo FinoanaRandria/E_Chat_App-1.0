@@ -4,7 +4,7 @@ import logos from "../../assets/img/logos.jpg"
 function Navbar() {
   return (
     <div>
-      <div>
+      <div className="cont">
           <img className="logos" src={logos} alt="none"/> 
         <nav>
           <a href="home">Home</a>
