@@ -2,13 +2,14 @@ import React from "react";
 import "../../assets/css/home.css";
 import home2 from "../../assets/img/icon.jpg"
 import home from "../../assets/svg/undraw_group_hangout_re_4t8r.svg";
+import backgrounds from "../../assets/svg/wave.svg"
 function Home() {
   return (
     <div>
-      <div className="container">
+      <div className="container" >
         <img className="home" src={home} />
         <div>
-          <div>
+          <div className="">
             <h1>Bienvenu sur E-chat <img className="home2" src={home2} /> </h1>
             <h2>
               {" "}
@@ -21,9 +22,7 @@ function Home() {
           </div>
         </div>
       </div>
-        <div className="container2">
-             
-        </div>
+        <img src={backgrounds} className="backgrounds"/>
     </div>
   );
 }
