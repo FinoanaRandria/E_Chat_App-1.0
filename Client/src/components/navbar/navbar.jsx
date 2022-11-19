@@ -5,10 +5,11 @@ function Navbar() {
     <div>
        <div>
          <nav>
-         <a href="#"> E-chat</a>
-           <a href='#'> Profile </a>
-         <a href='#'>A propos</a>
-
+         <a href='home'>Home</a>
+         <a href="App"> E-chat</a>
+           <a href='Profile'> Profile </a>
+         <a href='A propos'>A propos</a>
+          
                   
          </nav>
       </div>
