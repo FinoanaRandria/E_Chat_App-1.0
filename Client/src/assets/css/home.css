@@ -26,3 +26,8 @@
     left: 0;
     width: 100%;
 }
+.icons{
+    width: 26px;
+    position: relative;
+    top: 8px;
+}
