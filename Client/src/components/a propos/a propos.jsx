@@ -3,7 +3,9 @@ import "../../assets/css/a propos.css"
 
 function Apropos() {
   return (
-    <div>Apropos</div>
+    <div>
+        <h1>A propos rben a!!</h1>
+    </div>
   )
 }
 

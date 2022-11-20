@@ -9,8 +9,16 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar/>
-      <Home/>
+        <Navbar/>
+       <Routes>
+        <Route path='/home' element={
+          <Home/>
+        }>
+
+        </Route>
+       </Routes>
+      
+      
     </div>
   )
 }
