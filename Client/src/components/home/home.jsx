@@ -1,10 +1,24 @@
-import React from "react";
+import React,{useEffect,useRef} from "react";
 import "../../assets/css/home.css";
 import home2 from "../../assets/img/icon.jpg"
 import home from "../../assets/svg/undraw_group_hangout_re_4t8r.svg";
 import backgrounds from "../../assets/svg/wave.svg"
 import git from "../../assets/ico/git.ico"
+import Lottie from "lottie-web"
 function Home() {
+   
+    
+      const container = useRef(null)
+      useEffect(()=>{
+        Lottie.loadAnimation({
+          container:container.current,
+          renderer:'svg',
+          loop:true,
+        /* misy npm installena  */
+        })
+      },[])  
+
+
   return (
     <div>
       <div className="container" >
