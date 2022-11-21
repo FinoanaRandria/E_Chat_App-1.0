@@ -2,7 +2,11 @@ import React from 'react'
 import "../../assets/css/profile.css"
 function Profile() {
   return (
-    <div>Profile</div>
+    <div>
+      <h1>
+          Profile rben aa!
+      </h1>
+    </div>
   )
 }
 
