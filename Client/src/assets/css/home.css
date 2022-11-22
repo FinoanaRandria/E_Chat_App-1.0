@@ -11,7 +11,8 @@
 
 .home{
     position: fixed;
-    left: 350px;
+    left: 330px;
+    top: 230px;
     width: 430px;
 }
 .home:hover{
