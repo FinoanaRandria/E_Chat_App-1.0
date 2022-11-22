@@ -10,7 +10,8 @@
 }
 
 .home{
-    padding-right: 60px;
+    position: fixed;
+    left: 350px;
     width: 430px;
 }
 .home:hover{
@@ -35,9 +36,20 @@
     top: 8px;
 }
 
-h1{
+.h1x{
     font-size: 6vw;
     color: white;
     -webkit-text-stroke: 0.3vw #0099ff;
     text-transform: uppercase ;
+}
+.consta{
+    position: relative;
+    top: 50px;
+    left: 390px;
+}
+
+.suite{
+    position: fixed;
+    top: 325px;
+    left: 840px;
 }
