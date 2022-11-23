@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "../../assets/css/home.css";
 import home2 from "../../assets/img/icon.jpg";
-import home from "../../assets/svg/undraw_chatting_re_j55r.svg";
+import home from "../../assets/img/113330-iphone.gif";
 import backgrounds from "../../assets/svg/wave.svg";
 import git from "../../assets/ico/git.ico";
 import Lottie from "lottie-web";
