@@ -12,7 +12,7 @@ function Home() {
       container: container.current,
       renderer: "svg",
       loop: true,
-      /* misy npm installena  */
+      /* misy npm installena ray */
     });
   }, []);
 
@@ -24,7 +24,7 @@ function Home() {
           <div className="consta">
             <div className="content">
               <h2>Bienvenu </h2>
-              <h2>Bienvenu </h2>   
+              <h2>Bienvenu a</h2>   
             </div>
             
           </div>
