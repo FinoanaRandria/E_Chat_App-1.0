@@ -24,7 +24,7 @@ function Home() {
           <div className="consta">
             <div className="content">
               <h2>Bienvenu </h2>
-              <h2>Bienvenu a</h2>   
+              <h2>Bienvenu </h2>   
             </div>
             
           </div>
@@ -34,7 +34,7 @@ function Home() {
               Simplifiez-Vous la vie utiliser e-chat pour communiquer avec vos
               amis et votre familles{" "}
             </h2>
-            <p>Une appli 100% malgache et 100% gratuite</p>
+            <p>Une appli 100% Malagasy et 100% Gratuite</p>
             <br />
             <h6>
               {" "}

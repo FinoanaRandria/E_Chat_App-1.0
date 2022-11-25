@@ -1,11 +1,17 @@
+:root{
+  --color1:#0099ff;
+  --color2:#9e7bf8;
+}
+
 a{
+
   text-decoration: none;
 }
 li {
   
   padding-left: 18px;
    list-style: none;
-  color: #0099ff;
+  color: var(--color1);
   font-size: 21px;
   position: relative;
   top: 1px;
@@ -14,7 +20,7 @@ li {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 li:hover {
-  color: #9e7bf8;
+  color: var(--color2);
   transition: 0.4s;
 }
 ul{
