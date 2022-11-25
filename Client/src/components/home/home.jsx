@@ -5,6 +5,7 @@ import home from "../../assets/img/113330-iphone.gif";
 import backgrounds from "../../assets/svg/wave.svg";
 import git from "../../assets/ico/git.ico";
 import Lottie from "lottie-web";
+import {motion as m} from "framer-motion"
 function Home() {
   const container = useRef(null);
   useEffect(() => {
@@ -17,7 +18,13 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <m.div
+      initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{duration: 0.75,ease:"easeOut"}}
+        exit={{opacity: 0}}
+    >
+        
       <div className="container">
         <img className="home" src={home} />
         <div>
@@ -46,7 +53,7 @@ function Home() {
         </div>
       </div>
       <img src={backgrounds} className="backgrounds" />
-    </div>
+    </m.div>
   );
 }
 
