@@ -5,10 +5,7 @@ import im3 from "../../assets/svg/user.svg"
 function Profile() {
   return (
     <div>
-      <div className="content">
-        <h2>Profile</h2>
-        <h2>Profile</h2>
-      </div>
+      
 
        <div className="users">
 

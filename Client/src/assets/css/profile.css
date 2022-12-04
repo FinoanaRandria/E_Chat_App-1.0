@@ -54,7 +54,7 @@ body {
 
 .users{
   position: relative;
-  top: 200px;
+  top: 40px;
   left: 30px;
   
   
@@ -72,5 +72,6 @@ body {
 
 .infoUsers{
   position: absolute;
-  top: 170px;
+  top: 150px;
+  font-size: 30px;
 }
