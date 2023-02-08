@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
     <title>E-chat</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="chat-container">
-        <div class="chat-header">
-            
+      <div class="chat-header">
+        <div class="logo">
+          <i class="fab fa-node"></i>
+          <i class="fas fa-comments"></i>
+           <h3>E-chat</h3>
+        </div>
+        <p id="your-name">Your name</p>
+      </div>
+      
+
+      <!-- ------------------ -->
+    <div class="chat-section">
+
+        <div class="main-wrapper">
+            <div class="chat-content">
+                <div class="message">
+                     <div class="message-row other-message">
+                          <div class="message-title">
+                            👻<span>User1</span>
+                          </div>
+                          <div class="message-text">
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente id unde illum et amet rerum laborum veniam voluptatem. Amet, dolores.
+                          </div>
+                          <div class="message-time">
+                                feb 8
+                          </div>
+                     </div>
+                     <div class="message-row you-message">
+                        <div class="message-title">
+                            👻<span>Dev me</span>
+                          </div>
+                          <div class="message-text">
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente id unde illum et amet rerum laborum veniam voluptatem. Amet, dolores.
+                          </div>
+                          <div class="message-time">
+                                feb 8
+                          </div>
+                     </div>
+                </div>
+            </div>
+            <!-- -------------- -->
+             <form class="msg-tex">
+                   <input type="text" name="msg" id="msg" placeholder="Votre Message" autocomplete="off">
+
+                   <button>
+                    <i class="fas fa-paper-plane"> Send</i>
+                   </button>
+             </form>
         </div>
     </div>
-    <!-- ------------------ -->
-    <div class="chat-header">
-
     </div>
-</body>
+    
+  </body>
 </html>
