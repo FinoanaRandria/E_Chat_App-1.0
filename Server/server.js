@@ -1,11 +1,21 @@
-let express = require('express')
+const express = require('express')
+const path = require('path')
+const app = express()
 
-let app = express()
 
-const port = 9021
+const http = require('http').createServer(app)
+const PORT = process.env.PORT || 3000
 
-app.get('/', (req,res)=>{
-      res.send('hey')
+app.use(express.static(path.join(__dirname,'public')))
+
+app.get('/',(req,res)=>{
+      res.send('connected')
 })
 
-app.listen(port,`Server is runing on ${port}`)
+
+
+
+
+http.listen(PORT,()=>{
+      console.log(`Server is runing on ${PORT}`)
+})
