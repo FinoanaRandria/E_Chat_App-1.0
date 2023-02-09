@@ -11,6 +11,10 @@ app.use(express.static(path.join(__dirname,'public')))
 
 io.on('connection', socket=>{
       console.log('Connected')
+      socket.on('sendMessage',msg=>{
+              console.log(msg)
+            socket.broadcast.emit('sendToAll',msg)
+      })
 })
 
 http.listen(Port, console.log(`Server is starting on ${Port}`))
