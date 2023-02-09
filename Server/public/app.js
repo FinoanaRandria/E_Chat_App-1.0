@@ -12,11 +12,15 @@ do{
 
 document.querySelector('#your-name').textContent = nameUsers
 
-msgText.focus()
+
 
 btnSend.addEventListener('click',(e)=>{
      e.preventDefault()
      sendMsg(msgText.value)
+     msgText.value='';
+     msgText.focus()
+     chatbox.scrollTop = chatbox.scrollHeight;
+     
 })
 
 const sendMsg = message =>{
@@ -55,4 +59,5 @@ let innerText = `
 `;
 msgDiv.innerHTML = innerText
 displayMsg.appendChild(msgDiv)
+chatbox.scrollTop = chatbox.scrollHeight;
 }
