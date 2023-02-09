@@ -7,7 +7,7 @@ const displayMsg = document.querySelector('.message')
 let nameUsers;
 
 do{
-    nameUsers =prompt("Quel est votre nom ou psuedo")
+    nameUsers =prompt("Quel est votre Nom😁🌍")
 }while(!nameUsers)
 
 document.querySelector('#your-name').textContent = nameUsers
