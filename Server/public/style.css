@@ -15,10 +15,10 @@ body {
   max-width: 500px;
   width: 100%;
   border-radius: 10px;
-  box-shadow: 2px 9px 25px #0b2a5b;
+  box-shadow: 2px 9px 25px rgba(96, 169, 102, 0.8509803922);
   overflow: hidden;
-  border: 1px solid #0b2a5b;
-  background: #0d3575;
+  border: 1px solid rgba(96, 169, 102, 0.8509803922);
+  background: rgba(96, 169, 102, 0.8509803922);
 }
 .chat-container .message {
   width: 100%;
@@ -31,18 +31,18 @@ body {
 .chat-header {
   min-height: 50px;
   overflow: hidden;
-  background: #0b2a5b;
+  background: rgba(48, 186, 71, 0.6705882353);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #051b3f;
+  border-bottom: 1px solid rgba(96, 169, 102, 0.8509803922);
 }
 .chat-header .logo {
   display: flex;
   align-items: center;
   margin-left: 20px;
-  color: rgb(81, 184, 243);
+  color: white;
 }
 .chat-header .logo h3 {
   letter-spacing: 2px;
@@ -85,9 +85,9 @@ body {
   justify-items: end;
 }
 .you-message .message-text {
-  background-color: #0048aa;
+  background-color: rgba(96, 169, 102, 0.8509803922);
   color: white;
-  border: 1px solid #0048aa;
+  border: 1px solid rgba(96, 169, 102, 0.8509803922);
   border-radius: 14px 14px 0 14px;
 }
 
@@ -132,15 +132,47 @@ body {
   border-radius: 3px;
 }
 .msg-tex button {
-  flex: 1;
-  height: 40px;
-  outline: none;
-  border: 1px solid #888;
-  padding: 0 10px;
-  border-radius: 3px;
-  max-width: 120px;
-  cursor: pointer;
-  color: rgb(81, 184, 243);
+  font-family: inherit;
+  font-size: 20px;
+  background: #47b758;
+  color: white;
+  padding: 0.3em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.msg-tex button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+.msg-tex button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+.msg-tex button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+.msg-tex button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+.msg-tex button:hover span {
+  transform: translateX(5em);
+}
+.msg-tex button:active {
+  transform: scale(0.95);
+}
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
 }
 
 ::-webkit-scrollbar {
