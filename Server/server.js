@@ -1,21 +1,19 @@
 const express = require('express')
-const path = require('path')
 const app = express()
+const http = require('http').createServer(app);
+const path = require('path')
+const io = require('socket.io')(http);
+const Port = 3000
 
 
-const http = require('http').createServer(app)
-const PORT = process.env.PORT || 3000
 
 app.use(express.static(path.join(__dirname,'public')))
 
-app.get('/',(req,res)=>{
-      res.send('connected')
+io.on('connection', socket=>{
+      console.log('Connected')
 })
 
+http.listen(Port, console.log(`Server is starting on ${Port}`))
 
 
 
-
-http.listen(PORT,()=>{
-      console.log(`Server is runing on ${PORT}`)
-})
