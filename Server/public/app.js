@@ -25,6 +25,9 @@ const sendMsg = message =>{
         message: message.trim()
     }
 
+    display(msg,'you-message')
+  
+
     socket.emit('sendMessage',msg)
 }
 
@@ -34,7 +37,7 @@ socket.on('sendToAll',msg=>{
 
 const display =(msg,type)=>{
  const msgDiv = document.createElement('div')
- let className="type"
+ let className= type
  msgDiv.classList.add(className, 'message-row')
 let time = new Date().toLocaleDateString()
 
@@ -51,5 +54,5 @@ let innerText = `
 
 `;
 msgDiv.innerHTML = innerText
-display.appendChild(msgDiv)
+displayMsg.appendChild(msgDiv)
 }
