@@ -47,7 +47,7 @@ let time = new Date().toLocaleDateString()
 
 let innerText = `
 <div class="message-title">
-🐵<span>${msg.user}</span>
+🙉<span>${msg.user}</span>
 </div>
 <div class="message-text">
   ${msg.message}
