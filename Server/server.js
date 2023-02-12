@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname,'public')))
 
 io.on('connection', socket=>{
       console.log('Connected')
-      socket.on('disconnected',()=>{
+      socket.on('disconnect',()=>{
             console.log('Disconnected');
       })
       socket.on('sendMessage',msg=>{
